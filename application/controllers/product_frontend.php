@@ -47,7 +47,7 @@ class Product_frontend extends MY_Controller
         //echo "<pre>";var_dump($data['pro_focus']);die();
         $data['lists'] = $this->f_productmodel->ProductBycategory($alias,$config['per_page'], $this->uri->segment(4));
 //        /echo "<pre>";var_dump($data['list']);die();
-        
+
         $title = isset($data['cate_curent']->title_seo) ? $data['cate_curent']->title_seo : $data['cate_curent']->name;
         $keyword = isset($data['cate_curent']->keyword) ? $data['cate_curent']->keyword : $data['cate_curent']->description;
         $description = isset($data['cate_curent']->description_seo) ? $data['cate_curent']->description_seo : $data['cate_curent']->description;
@@ -66,8 +66,7 @@ class Product_frontend extends MY_Controller
         $keyword=@$data['pro_first']->keyword;
         $description=@$data['pro_first']->description_seo;
         $this->LoadHeader($title,$keyword,$description);
-        $this->load->view('productdetail',$data);
-
+        $this->load->view('product_detail',$data);
         $this->LoadFooter();
     }
     public function Search_pro($ma_hang = 'null')

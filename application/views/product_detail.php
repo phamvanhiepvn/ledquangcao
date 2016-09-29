@@ -12,7 +12,7 @@
             <?php echo  $pro_first->name; ?>
         </div>
         <div class="pro_detail">
-            <table>
+            <table class="table-detail">
                 <?php echo  $pro_first->detail; ?>
             </table>
 

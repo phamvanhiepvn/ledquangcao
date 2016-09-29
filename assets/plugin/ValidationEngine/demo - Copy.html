@@ -1,0 +1,112 @@
+<!-- Stylesheets -->
+<link href="style/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="style/jquery.cleditor.css">
+
+<!-- jQuery Validation Engine stylesheet -->
+<link href="style/validationEngine.jquery.css" rel="stylesheet">
+
+
+<div class="padd container" style="padding-top: 100px">
+            <form action="" method="post" id="loginform" class="validate form-horizontal" role="form">
+
+                                        <div class="form-group">
+                                            <label for="email" class="col-md-3 control-label">Email</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="validate[required] form-control" name="email" placeholder="Email Address">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="col-md-3 control-label">Password</label>
+                                            <div class="col-md-9">
+                                                <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="icode" class="col-md-3 control-label">Invitation Code</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" name="icode" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <!-- Button -->
+                                            <div class="col-md-offset-3 col-md-9">
+                                                <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-group">
+                                            <div class="col-md-12 control">
+                                                <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                                    Don't have an account!
+                                                    <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                                        Sign Up Here
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+        <fieldset>
+            <div class="form-group">
+                <label >Name</label>
+                <input type="text" class="validate[required] form-control placeholder" id="personName" placeholder="Your name" data-bind="value: name" />
+            </div>
+            <div class="form-group">
+                <label >Email address</label>
+                <input type="email" class="validate[required,custom[email]] form-control placeholder" id="personEmail" placeholder="Your email" data-original-title="Your activation email will be sent to this address." data-bind="value: email, event: { change: checkDuplicateEmail }" />
+            </div>
+            <div class="form-group">
+                <label >Phone number</label>
+                <input type="text" class="validate[required,custom[phone]] form-control placeholder" id="phone" placeholder="Your email" data-original-title="Your activation email will be sent to this address." data-bind="value: email, event: { change: checkDuplicateEmail }" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="validate[required] form-control placeholder" id="password" placeholder="Password" data-bind="value: password" />
+            </div>
+            <div class="form-group">
+                <label >Repeat Password</label>
+                <input type="password" class="validate[required,equals[password]] form-control placeholder" id="repeatPassword" placeholder="Repeat password" data-bind="value: confirmPassword, event: { change: matchPassword }" />
+            </div>
+            <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" class="validate[required] form-control placeholder" id="companyName" placeholder="Your company name" data-bind="value: company" />
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select class="validate[required] form-control placeholder" id="country" data-bind="options: availableCountries, value: selectedCountry, optionsCaption: 'Country'">
+                    <option value>Choose</option>
+                    <option value="1">list 1</option>
+                    <option value="2">list 2</option>
+                </select>
+            </div>
+            <button id="signupuser" type="submit" class="btn btn-primary btn-block">Create Free Account</button>
+        </fieldset>
+    </form>
+</div>
+ 
+<script src="js/jquery.js"></script> <!-- jQuery -->
+<script src="js/jquery.validationEngine-en.js" charset="utf-8"></script> <!-- jQuery Validation Engine Language File -->
+<script src="js/jquery.validationEngine.js"></script> <!-- jQuery Validation Engine -->
+<script>
+    $(document).ready(function(){
+        $(".validate").validationEngine();
+    });
+</script>

@@ -1,0 +1,87 @@
+/*****************************************************/
+/* Responsive for web
+/*****************************************************/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.site-container{width: 100%!important;}
+	.site-inner{width: 100%!important;}
+	.nav-primary{
+	}
+	.sidebar-content .content, .sidebar-sidebar-content .content{width: 100%!important; margin-right: 0 !important;}
+	.product-list .product-item {float: left!important;width: 31%!important;    margin: 6px!important;height: 260px;  }
+	.product-list .product-item .product-img img{width: auto!important;}
+	.news-list .news-item{margin: 0 3px!important;}
+	.sidebar {    width: 200px!important;margin: 0 auto!important;    float: none !important;clear: both;}
+	.sidebar .widget{}
+	#text-4 img{width:25%;}
+	#text-4{padding:0px !important;}
+	.thongso{width:330px!important; float: right!important; margin-right: 10px!important;}
+	.anhspsp{ float: left!important; margin-left: 10px !important;}
+	.product-item:before{background:none!important;}
+	.site-header,.widget_search{display:none!important;}
+	.sang{display:none;}
+	.entry-content{    margin: 0 5px!important;}
+	.entry-content table{width:100%!important;}
+	#searchform input[type=text], .search-form input[type=text], .search-form input[type=search]{width:77px!important;}
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+	.site-container{width: 100%!important;}
+	.site-inner{width: 100%!important;}
+	.nav-primary,.widget_search{display:none!important;}
+	.sidebar-content .content, .sidebar-sidebar-content .content{width: 100%!important; margin-right: 0 !important;}
+	.product-list .product-item {float: left!important;width: 47%!important;    margin: 6px!important;height: 260px;  }
+	.product-list .product-item .product-img img{width: auto!important;}
+	.news-list .news-item{margin: 0 3px!important;}
+	.sidebar {    width: 200px!important;margin: 0 auto!important;    float: none !important;clear: both;}
+	.sidebar .widget{}
+	#text-4 img{width:30%;}
+	#text-4{padding:0px !important;}
+	.thongso{width:280px!important; float: none!important; margin: 0 auto!important;}
+	.anhspsp{ float: left!important; margin-left: 10px !important;}
+	.product-item:before{background:none!important;}
+	.site-header{display:none!important;}
+	.sang{display:none;}
+	.entry-content{    margin: 0 5px!important;}
+	.entry-content table{width:100%!important;}
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+	.site-container{width: 100%!important;}
+	.site-inner{width: 100%!important;}
+	.nav-primary,.widget_search{display:none!important;}
+	.sidebar-content .content, .sidebar-sidebar-content .content{width: 100%!important; margin-right: 0 !important;}
+	.product-list .product-item {float: left!important;width: 47%!important;    margin: 6px!important;height: 260px;  }
+	.product-list .product-item .product-img img{width: auto!important;}
+	.news-list .news-item{margin: 0 3px!important;}
+	.sidebar {    width: 200px!important;margin: 0 auto!important;    float: none !important;clear: both;}
+	.sidebar .widget{}
+	#text-4 img{width:35%;}
+	#text-4{padding:0px !important;}
+	.thongso{width:280px!important; float: none!important; margin: 0 auto!important;}
+	.anhspsp{ float: none!important; margin: 0 auto!important;}
+	.product-item:before{background:none!important;}
+	.site-header{display:none!important;}
+	.sang{display:none;}
+	.entry-content{    margin: 0 5px!important;}
+	.entry-content table{width:100%!important;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.site-container{width: 100%!important;}
+	.site-inner{width: 100%!important;}
+	.nav-primary,.widget_search{display:none!important;}
+	.sidebar-content .content, .sidebar-sidebar-content .content{width: 100%!important; margin-right: 0 !important;}
+	.product-list .product-item {float: none!important;margin: 0 auto!important;height: 260px;    margin-bottom: 10px !important;}
+	.product-list .product-item .product-img img{width: auto!important;}
+	.news-list .news-item{margin: 0 3px!important;}
+	.sidebar {    width: 200px!important;margin: 0 auto!important;    float: none !important;clear: both;}
+	.sidebar .widget{}
+	#text-4 img{width:50%;}
+	#text-4{padding:0px !important;}
+	.thongso{width:280px!important; float: none!important; margin: 0 auto!important;}
+	.anhspsp{ float: none!important; margin: 0 auto!important;}
+	.product-item:before{background:none!important;}
+	.site-header{display:none!important;}
+	.sang{display:none;}
+	.entry-content{    margin: 0 5px!important;}
+	.entry-content table{width:100%!important;}
+}
